@@ -14,7 +14,7 @@ jobs:
       run: |
         mkdir -p ~/.config/rclone/
         cat >  ~/.config/rclone/rclone.conf  << EOF
-        ${{ secrets.baru }}
+        ${{ secrets.baru1 }}
         EOF
     - name: Penyalinan 1
       run: |
