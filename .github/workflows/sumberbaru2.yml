@@ -72,7 +72,7 @@ jobs:
 #         rclone copy S38: D38: --drive-server-side-across-configs --ignore-errors --max-age 24h
     - name: Penyalinan 39
       run: |
-         rclone copy S39: D49: --drive-server-side-across-configs --ignore-errors --max-age 24h
+         rclone copy S39: D39: --drive-server-side-across-configs --ignore-errors --max-age 24h
     - name: Penyalinan 40
       run: |
          rclone copy S40: D40: --drive-server-side-across-configs --ignore-errors --max-age 24h
