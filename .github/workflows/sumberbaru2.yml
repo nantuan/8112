@@ -1,0 +1,78 @@
+name: Sumber Baru 2
+on:
+  schedule:
+    - cron: 0 */6 * * *
+  workflow_dispatch:
+jobs:
+  ProsesBackup:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2.1.0
+    - name: Menginstall Rclone
+      run: curl https://rclone.org/install.sh | sudo bash
+    - name: Memuat konfigurasi Rclone
+      run: |
+        mkdir -p ~/.config/rclone/
+        cat >  ~/.config/rclone/rclone.conf  << EOF
+        ${{ secrets.baru }}
+        EOF
+    - name: Penyalinan 21
+      run: |
+         rclone copy S21: D21: --drive-server-side-across-configs --ignore-errors --max-age 24h
+    - name: Penyalinan 22
+      run: |
+         rclone copy S22: D22: --drive-server-side-across-configs --ignore-errors --max-age 24h
+    - name: Penyalinan 23
+      run: |
+         rclone copy S23: D23: --drive-server-side-across-configs --ignore-errors --max-age 24h
+    - name: Penyalinan 24
+      run: |
+         rclone copy S24: D24: --drive-server-side-across-configs --ignore-errors --max-age 24h
+    - name: Penyalinan 25
+      run: |
+         rclone copy S25: D25: --drive-server-side-across-configs --ignore-errors --max-age 24h
+    - name: Penyalinan 26
+      run: |
+         rclone copy S26: D26: --drive-server-side-across-configs --ignore-errors --max-age 24h
+    - name: Penyalinan 27
+      run: |
+         rclone copy S27: D27: --drive-server-side-across-configs --ignore-errors --max-age 24h
+    - name: Penyalinan 28
+      run: |
+         rclone copy S28: D28: --drive-server-side-across-configs --ignore-errors --max-age 24h
+    - name: Penyalinan 29
+      run: |
+         rclone copy S29: D29: --drive-server-side-across-configs --ignore-errors --max-age 24h
+    - name: Penyalinan 30
+      run: |
+         rclone copy S30: D30: --ignore-errors --max-age 24h
+    - name: Penyalinan 31
+      run: |
+         rclone copy S31: D31: --drive-server-side-across-configs --ignore-errors --max-age 24h
+    - name: Penyalinan 32
+      run: |
+         rclone copy S32: D32: --drive-server-side-across-configs --ignore-errors --max-age 24h
+    - name: Penyalinan 33
+      run: |
+         rclone copy S33: D33: --drive-server-side-across-configs --ignore-errors --max-age 24h
+    - name: Penyalinan 34
+      run: |
+         rclone copy S34: D34: --drive-server-side-across-configs --ignore-errors --max-age 24h
+    - name: Penyalinan 35
+      run: |
+         rclone copy S35: D35: --drive-server-side-across-configs --ignore-errors --max-age 24h
+    - name: Penyalinan 36
+      run: |
+         rclone copy S36: D36: --drive-server-side-across-configs --ignore-errors --max-age 24h
+    - name: Penyalinan 37
+      run: |
+         rclone copy S47: D37: --drive-server-side-across-configs --ignore-errors --max-age 24h
+    - name: Penyalinan 38
+      run: |
+         rclone copy S38: D38: --drive-server-side-across-configs --ignore-errors --max-age 24h
+    - name: Penyalinan 39
+      run: |
+         rclone copy S39: D49: --drive-server-side-across-configs --ignore-errors --max-age 24h
+    - name: Penyalinan 40
+      run: |
+         rclone copy S40: D40: --drive-server-side-across-configs --ignore-errors --max-age 24h
