@@ -31,9 +31,9 @@ jobs:
     - name: Penyalinan 25
       run: |
          rclone copy S25: D25: --drive-server-side-across-configs --ignore-errors --max-age 24h
-    - name: Penyalinan 26
-      run: |
-         rclone copy S26: D26: --drive-server-side-across-configs --ignore-errors --max-age 24h
+#    - name: Penyalinan 26 - expired
+#      run: |
+#         rclone copy S26: D26: --drive-server-side-across-configs --ignore-errors --max-age 24h
     - name: Penyalinan 27
       run: |
          rclone copy S27: D27: --drive-server-side-across-configs --ignore-errors --max-age 24h
