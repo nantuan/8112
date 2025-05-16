@@ -16,9 +16,9 @@ jobs:
         cat >  ~/.config/rclone/rclone.conf  << EOF
         ${{ secrets.baru3 }}
         EOF
-    - name: Penyalinan 41
-      run: |
-         rclone copy S41: D41: --drive-server-side-across-configs --ignore-errors --max-age 24h
+#    - name: Penyalinan 41 - expired
+#      run: |
+#         rclone copy S41: D41: --drive-server-side-across-configs --ignore-errors --max-age 24h
     - name: Penyalinan 42
       run: |
          rclone copy S42: D42: --drive-server-side-across-configs --ignore-errors --max-age 24h
