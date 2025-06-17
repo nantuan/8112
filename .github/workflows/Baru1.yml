@@ -31,15 +31,15 @@ jobs:
     - name: DELETE 5
       run: |
          rclone delete "S5:" --drive-use-trash=false
-    - name: DELETE 6
-      run: |
-         rclone delete "S6:" --drive-use-trash=false
+#    - name: DELETE 6
+#      run: |
+#         rclone delete "S6:" --drive-use-trash=false
     - name: DELETE 7
       run: |
          rclone delete "S7:" --drive-use-trash=false
-    - name: DELETE 8
-      run: |
-         rclone delete "S8:" --drive-use-trash=false
+#    - name: DELETE 8
+#      run: |
+#         rclone delete "S8:" --drive-use-trash=false
     - name: DELETE 9
       run: |
          rclone delete "S9:" --drive-use-trash=false
@@ -64,9 +64,9 @@ jobs:
     - name: DELETE 16
       run: |
          rclone delete "S16:" --drive-use-trash=false
-    - name: DELETE 17
-      run: |
-         rclone delete "S17:" --drive-use-trash=false
+#    - name: DELETE 17
+#      run: |
+#         rclone delete "S17:" --drive-use-trash=false
     - name: DELETE 18
       run: |
          rclone delete "S18:" --drive-use-trash=false
