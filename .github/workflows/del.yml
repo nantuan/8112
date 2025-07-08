@@ -1,4 +1,4 @@
-name: DELETER 1-20
+name: DELETER
 on:
   schedule:
     - cron: 50 */6 * * *
