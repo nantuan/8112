@@ -31,15 +31,15 @@ jobs:
     - name: Penyalinan 25
       run: |
          rclone copy S25: D25: --drive-server-side-across-configs --ignore-errors --max-age 24h
-#    - name: Penyalinan 26 - expired
-#      run: |
-#         rclone copy S26: D26: --drive-server-side-across-configs --ignore-errors --max-age 24h
+    - name: Penyalinan 26 - expired
+      run: |
+         rclone copy S26: D26: --drive-server-side-across-configs --ignore-errors --max-age 24h
     - name: Penyalinan 27
       run: |
          rclone copy S27: D27: --drive-server-side-across-configs --ignore-errors --max-age 24h
-#    - name: Penyalinan 28 - 3xpired
-#      run: |
-#         rclone copy S28: D28: --drive-server-side-across-configs --ignore-errors --max-age 24h
+    - name: Penyalinan 28 - 3xpired
+      run: |
+         rclone copy S28: D28: --drive-server-side-across-configs --ignore-errors --max-age 24h
     - name: Penyalinan 29
       run: |
          rclone copy S29: D29: --drive-server-side-across-configs --ignore-errors --max-age 24h
@@ -49,9 +49,9 @@ jobs:
     - name: Penyalinan 31
       run: |
          rclone copy S31: D31: --drive-server-side-across-configs --ignore-errors --max-age 24h
-#    - name: Penyalinan 32 - expired
-#      run: |
-#         rclone copy S32: D32: --drive-server-side-across-configs --ignore-errors --max-age 24h
+    - name: Penyalinan 32 - expired
+      run: |
+         rclone copy S32: D32: --drive-server-side-across-configs --ignore-errors --max-age 24h
     - name: Penyalinan 33
       run: |
          rclone copy S33: D33: --drive-server-side-across-configs --ignore-errors --max-age 24h
@@ -64,12 +64,12 @@ jobs:
     - name: Penyalinan 36
       run: |
          rclone copy S36: D36: --drive-server-side-across-configs --ignore-errors --max-age 24h
-#    - name: Penyalinan 37- expired
-#      run: |
-#         rclone copy S47: D37: --drive-server-side-across-configs --ignore-errors --max-age 24h
-#    - name: Penyalinan 38 - expired
-#      run: |
-#         rclone copy S38: D38: --drive-server-side-across-configs --ignore-errors --max-age 24h
+    - name: Penyalinan 37- expired
+      run: |
+         rclone copy S47: D37: --drive-server-side-across-configs --ignore-errors --max-age 24h
+    - name: Penyalinan 38 - expired
+      run: |
+         rclone copy S38: D38: --drive-server-side-across-configs --ignore-errors --max-age 24h
     - name: Penyalinan 39
       run: |
          rclone copy S39: D39: --drive-server-side-across-configs --ignore-errors --max-age 24h
