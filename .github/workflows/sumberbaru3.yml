@@ -49,30 +49,4 @@ jobs:
     - name: Penyalinan 51
       run: |
          rclone copy S51: D51: --drive-server-side-across-configs --ignore-errors --max-age 24h
-    - name: Penyalinan 52
-      run: |
-         rclone copy S52: D52: --drive-server-side-across-configs --ignore-errors --max-age 24h
-    - name: Penyalinan 53
-      run: |
-         rclone copy S53: D53: --drive-server-side-across-configs --ignore-errors --max-age 24h
-    - name: Penyalinan 54
-      run: |
-         rclone copy S54: D54: --drive-server-side-across-configs --ignore-errors --max-age 24h
-    - name: Penyalinan 55
-      run: |
-         rclone copy S55: D55: --drive-server-side-across-configs --ignore-errors --max-age 24h
-    - name: Penyalinan 56
-      run: |
-         rclone copy S56: D56: --drive-server-side-across-configs --ignore-errors --max-age 24h
-    - name: Penyalinan 57
-      run: |
-         rclone copy S57: D57: --drive-server-side-across-configs --ignore-errors --max-age 24h
-    - name: Penyalinan 58
-      run: |
-         rclone copy S58: D58: --drive-server-side-across-configs --ignore-errors --max-age 24h
-    - name: Penyalinan 59
-      run: |
-         rclone copy S59: D59: --drive-server-side-across-configs --ignore-errors --max-age 24h
-    - name: Penyalinan 60
-      run: |
-         rclone copy S60: D60: --drive-server-side-across-configs --ignore-errors --max-age 24h
+
