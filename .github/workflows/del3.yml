@@ -1,0 +1,50 @@
+name: Sumber Baru 3 - DEL
+on:
+  workflow_dispatch:
+jobs:
+  ProsesBackup:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2.1.0
+    - name: Menginstall Rclone
+      run: curl https://rclone.org/install.sh | sudo bash
+    - name: Memuat konfigurasi Rclone
+      run: |
+        mkdir -p ~/.config/rclone/
+        cat >  ~/.config/rclone/rclone.conf  << EOF
+        ${{ secrets.baru33 }}
+        EOF
+    - name: Proses 41
+      run: |
+         rclone delete S41: --drive-use-trash=false --ignore-errors --max-age 24h
+    - name: Proses 42
+      run: |
+         rclone delete S42: --drive-use-trash=false --ignore-errors --max-age 24h
+    - name: Proses 43
+      run: |
+         rclone delete S43: --drive-use-trash=false --ignore-errors --max-age 24h
+    - name: Proses 44
+      run: |
+         rclone delete S44: --drive-use-trash=false --ignore-errors --max-age 24h
+    - name: Proses 45
+      run: |
+         rclone delete S45: --drive-use-trash=false --ignore-errors --max-age 24h
+    - name: Proses 46
+      run: |
+         rclone delete S46: --drive-use-trash=false --ignore-errors --max-age 24h
+    - name: Proses 47
+      run: |
+         rclone delete S47: --drive-use-trash=false --ignore-errors --max-age 24h
+    - name: Proses 48
+      run: |
+         rclone delete S48:  --drive-use-trash=false --ignore-errors --max-age 24h
+    - name: Proses 49
+      run: |
+         rclone delete S49: --drive-use-trash=false --ignore-errors --max-age 24h
+    - name: Proses 50
+      run: |
+         rclone delete S50: --drive-server-side-across-configs--ignore-errors --max-age 24h
+    - name: Proses 51
+      run: |
+         rclone delete S51: --drive-use-trash=false --ignore-errors --max-age 24h
+ 

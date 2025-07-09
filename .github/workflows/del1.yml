@@ -1,0 +1,75 @@
+name: Sumber Baru 1 - DEL
+on:
+  workflow_dispatch:
+jobs:
+  Proses:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2.1.0
+    - name: Menginstall Rclone
+      run: curl https://rclone.org/install.sh | sudo bash
+    - name: Memuat konfigurasi Rclone
+      run: |
+        mkdir -p ~/.config/rclone/
+        cat >  ~/.config/rclone/rclone.conf  << EOF
+        ${{ secrets.baru1 }}
+        EOF
+    - name: Proses 1
+      run: |
+         rclone delete S1: --drive-use-trash=false --ignore-errors 
+    - name: Proses 2
+      run: |
+         rclone delete S2: --drive-use-trash=false --ignore-errors 
+    - name: Proses 3
+      run: |
+         rclone delete S3: --drive-use-trash=false --ignore-errors 
+      run: |
+         rclone delete S4: --drive-use-trash=false --ignore-errors 
+    - name: Proses 5
+      run: |
+         rclone delete S5: --drive-use-trash=false --ignore-errors 
+    - name: Proses 6 (token expired)
+      run: |
+         rclone delete S6: --drive-use-trash=false --ignore-errors 
+    - name: Proses 7
+      run: |
+         rclone delete S7: --drive-use-trash=false --ignore-errors 
+    - name: Proses 8
+      run: |
+         rclone delete S8: --drive-use-trash=false --ignore-errors 
+    - name: Proses 9
+      run: |
+         rclone delete S9: --drive-use-trash=false --ignore-errors 
+    - name: Proses 10
+      run: |
+         rclone delete S10: --drive-use-trash=false  --ignore-errors 
+    - name: Proses 11
+      run: |
+         rclone delete S11: --drive-use-trash=false --ignore-errors 
+    - name: Proses 12
+      run: |
+         rclone delete S12: --drive-use-trash=false --ignore-errors 
+    - name: Proses 13
+      run: |
+         rclone delete S13: --drive-use-trash=false --ignore-errors 
+    - name: Proses 14
+      run: |
+         rclone delete S14: --drive-use-trash=false --ignore-errors 
+    - name: Proses 15
+      run: |
+         rclone delete S15: --drive-use-trash=false --ignore-errors 
+    - name: Proses 16
+      run: |
+         rclone delete S16: --drive-use-trash=false --ignore-errors 
+    - name: Proses 17
+      run: |
+         rclone delete S17: --drive-use-trash=false --ignore-errors 
+    - name: Proses 18
+      run: |
+         rclone delete S18: --drive-use-trash=false --ignore-errors 
+    - name: Proses 19
+      run: |
+         rclone delete S19: --drive-use-trash=false --ignore-errors 
+    - name: Proses 20
+      run: |
+         rclone delete S20: --drive-use-trash=false --ignore-errors 

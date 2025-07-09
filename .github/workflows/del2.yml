@@ -1,0 +1,76 @@
+name: Sumber Baru 2 - DEL
+on:
+  workflow_dispatch:
+jobs:
+  Proses:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2.1.0
+    - name: Menginstall Rclone
+      run: curl https://rclone.org/install.sh | sudo bash
+    - name: Memuat konfigurasi Rclone
+      run: |
+        mkdir -p ~/.config/rclone/
+        cat >  ~/.config/rclone/rclone.conf  << EOF
+        ${{ secrets.baru2 }}
+        EOF
+    - name: Proses 21
+      run: |
+         rclone delete S21: --drive-use-trash=false --ignore-errors 
+    - name: Proses 22
+      run: |
+         rclone delete S22: --drive-use-trash=false --ignore-errors 
+    - name: Proses 23
+      run: |
+         rclone delete S23: --drive-use-trash=false --ignore-errors 
+    - name: Proses 24
+      run: |
+         rclone delete S24: --drive-use-trash=false --ignore-errors 
+    - name: Proses 25
+      run: |
+         rclone delete S25: --drive-use-trash=false --ignore-errors 
+    - name: Proses 26
+      run: |
+         rclone delete S26: --drive-use-trash=false --ignore-errors 
+    - name: Proses 27
+      run: |
+         rclone delete S27: --drive-use-trash=false --ignore-errors 
+    - name: Proses 28
+      run: |
+         rclone delete S28: --drive-use-trash=false --ignore-errors 
+    - name: Proses 29
+      run: |
+         rclone delete S29: --drive-use-trash=false --ignore-errors 
+    - name: Proses 30
+      run: |
+         rclone delete S30: --drive-use-trash=false --ignore-errors 
+    - name: Proses 31
+      run: |
+         rclone delete S31: --drive-use-trash=false --ignore-errors 
+    - name: Proses 32
+      run: |
+         rclone delete S32: --drive-use-trash=false --ignore-errors 
+    - name: Proses 33
+      run: |
+         rclone delete S33: --drive-use-trash=false --ignore-errors 
+    - name: Proses 34
+      run: |
+         rclone delete S34: --drive-use-trash=false --ignore-errors 
+    - name: Proses 35
+      run: |
+         rclone delete S35: --drive-use-trash=false --ignore-errors 
+    - name: Proses 36
+      run: |
+         rclone delete S36: --drive-use-trash=false --ignore-errors 
+    - name: Proses 37
+      run: |
+         rclone delete S47: --drive-use-trash=false --ignore-errors 
+    - name: Proses 38
+      run: |
+         rclone delete S38: --drive-use-trash=false --ignore-errors 
+    - name: Proses 39
+      run: |
+         rclone delete S39: --drive-use-trash=false --ignore-errors 
+    - name: Proses 40
+      run: |
+         rclone delete S40: --drive-use-trash=false --ignore-errors 
