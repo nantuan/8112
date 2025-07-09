@@ -12,7 +12,7 @@ jobs:
       run: |
         mkdir -p ~/.config/rclone/
         cat >  ~/.config/rclone/rclone.conf  << EOF
-        ${{ secrets.baru33 }}
+        ${{ secrets.baru3 }}
         EOF
     - name: Proses 41
       run: |
