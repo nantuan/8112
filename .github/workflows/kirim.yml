@@ -26,7 +26,7 @@ jobs:
           curl -o aktif2.txt -LJO https://winter.lovolyxa.workers.dev/api/v1/sub?limit=10
           curl -o aktif3.txt -LJO https://vpn.ex03.workers.dev/api/v1/sub?limit=10
           curl -o aktif4.txt -LJO https://nautica.krikkrik.tech/api/v1/sub
-          curl -o aktif5.txt -LJO https://siren.afrcloud.site/api/v1/sub
+          curl -o aktif5.txt -LJO https://nautica.zerostore.tech/api/v1/sub
 
       - name: send to telegram
         run: |
