@@ -4,8 +4,7 @@ on:
     branches: [ "main" ]
   schedule:
     - cron: '*/5 * * * *'
-
-  #workflow_dispatch:
+  workflow_dispatch:
 jobs:
   UpdateSub:
     runs-on: ubuntu-latest
