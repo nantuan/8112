@@ -1,0 +1,29 @@
+name: kirim-kirim
+on:
+  push:
+    branches: [ "main" ]
+  schedule:
+    - cron: '*/5 * * * *'
+
+  #workflow_dispatch:
+jobs:
+  UpdateSub:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check The Code
+        uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.10'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install python-telegram-bot==13.15 requests
+      - name: Get Files
+        run: |
+          curl -o aktif.txt -LJO https://5412.us.to/api/v1/sub?limit=10
+      - name: send to telegram
+        run: |
+          python3 iag.py ${{ secrets.BOT }} -1002292042831 aktif.txt
