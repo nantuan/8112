@@ -22,12 +22,11 @@ jobs:
           python -m pip install python-telegram-bot==13.15 requests
       - name: Get Files
         run: |
-          curl -o aktif.txt -LJO https://5412.us.to/api/v1/sub?limit=10
-          curl -o akti2.txt -LJO https://winter.lovolyxa.workers.dev/api/v1/sub?limit=10
-
+          curl -o aktif1.txt -LJO https://5412.us.to/api/v1/sub?limit=10
+          curl -o aktif2.txt -LJO https://winter.lovolyxa.workers.dev/api/v1/sub?limit=10
+          curl -o aktif3.txt -LJO https://vpn.ex03.workers.dev/api/v1/sub?limit=10
       - name: send to telegram
         run: |
-          python3 kirim.py ${{ secrets.BOT }} -1002292042831 aktif.txt && python3 kirim.py ${{ secrets.BOT }} -1002292042831 aktif2.txt
-
+          python3 kirim.py ${{ secrets.BOT }} -1002292042831 aktif.txt && python3 kirim.py ${{ secrets.BOT }} -1002292042831 aktif2.txt && python3 kirim.py ${{ secrets.BOT }} -1002292042831 aktif3.txt
 
 
