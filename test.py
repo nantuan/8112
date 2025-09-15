@@ -26,14 +26,18 @@ def baca_file_dan_kirim_chunk(file_path, bot_token, channel_id, chunk_size=10):
                 if (i + 1) % chunk_size == 0:
                     pesan = "\n\n".join(baris_chunk).strip()
                     if pesan:
-                        kirim_pesan_telegram(pesan, bot_token, channel_id)
+                        # Tambahkan baris kredit
+                        pesan_dengan_kredit = f"{pesan}\n\nDikumpulkan oleh: @infoakungratis"
+                        kirim_pesan_telegram(pesan_dengan_kredit, bot_token, channel_id)
                     baris_chunk = []
                     time.sleep(1)
             
             if baris_chunk:
                 pesan = "\n\n".join(baris_chunk).strip()
                 if pesan:
-                    kirim_pesan_telegram(pesan, bot_token, channel_id)
+                    # Tambahkan baris kredit
+                    pesan_dengan_kredit = f"{pesan}\n\nDikumpulkan oleh: @infoakungratis"
+                    kirim_pesan_telegram(pesan_dengan_kredit, bot_token, channel_id)
     except FileNotFoundError:
         print(f"Error: File '{file_path}' tidak ditemukan.")
     except Exception as e:
