@@ -1,4 +1,4 @@
-name: kirim-kirim
+name: kirim-kirim 2
 on:
   push:
     branches: [ "main" ]
@@ -22,7 +22,7 @@ jobs:
           python -m pip install python-telegram-bot==13.15 requests
       - name: Get Files
         run: |
-          curl -o aktif1.txt -LJO https://herokumail.eu.org/api/v1/sub
+          curl -o aktif1.txt -LJO https://jjj.pannely.workers.dev/api/v1/sub?vpn=vless,trojan
       - name: send to telegram
         run: |
           python3 kirim.py ${{ secrets.BOT }} -1002292042831 aktif1.txt 
