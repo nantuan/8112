@@ -31,6 +31,6 @@ jobs:
           curl -o aktif7.txt -LJO https://nautica.situs.workers.dev/api/v1/sub?vpn=vless,trojan&cc=SG,ID,MY,AU&port=443
       - name: send to telegram
         run: |
-          python3 kirim.py ${{ secrets.BOT }} -1002292042831 aktif1.txt && python3 kirim.py ${{ secrets.BOT }} -1002292042831 aktif2.txt && python3 kirim.py ${{ secrets.BOT }} -1002292042831 aktif3.txt && python3 kirim.py ${{ secrets.BOT }} -1002292042831 aktif4.txt && python3 kirim.py ${{ secrets.BOT }} -1002292042831 aktif5.txt && python3 kirim.py ${{ secrets.BOT }} -1002292042831 aktif6.txt && kirim.py ${{ secrets.BOT }} -1002292042831 aktif7.txt
+          python3 kirim.py ${{ secrets.BOT }} -1002292042831 aktif1.txt && python3 kirim.py ${{ secrets.BOT }} -1002292042831 aktif2.txt && python3 kirim.py ${{ secrets.BOT }} -1002292042831 aktif3.txt && python3 kirim.py ${{ secrets.BOT }} -1002292042831 aktif4.txt && python3 kirim.py ${{ secrets.BOT }} -1002292042831 aktif5.txt && python3 kirim.py ${{ secrets.BOT }} -1002292042831 aktif6.txt && python3 kirim.py ${{ secrets.BOT }} -1002292042831 aktif7.txt
 
 
