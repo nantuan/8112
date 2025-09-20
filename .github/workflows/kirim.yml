@@ -22,18 +22,15 @@ jobs:
           python -m pip install python-telegram-bot==13.15 requests
       - name: Get Files
         run: |
-          curl -o aktif1.txt -LJO https://5412.us.to/api/v1/sub?limit=10
-          curl -o aktif2.txt -LJO https://winter.lovolyxa.workers.dev/api/v1/sub?limit=10
-          curl -o aktif3.txt -LJO https://vpn.ex03.workers.dev/api/v1/sub?limit=10
-          curl -o aktif4.txt -LJO https://nautica.krikkrik.tech/api/v1/sub
-          curl -o aktif5.txt -LJO https://nautica.zerostore.tech/api/v1/sub
+          curl -o aktif1.txt -LJO https://5412.us.to/api/v1/sub?limit=10?vpn=vless,trojan&port=443,80
+          curl -o aktif2.txt -LJO https://winter.lovolyxa.workers.dev/api/v1/sub?limit=10&vpn=vless,trojan&port=443,80
+          curl -o aktif3.txt -LJO https://vpn.ex03.workers.dev/api/v1/sub?limit=10&vpn=vless,trojan&port=443,80
+          curl -o aktif4.txt -LJO https://nautica.krikkrik.tech/api/v1/sub&?vpn=vless,trojan&port=443,80
+          curl -o aktif5.txt -LJO https://nautica.zerostore.tech/api/v1/sub?vpn=vless,trojan&port=443,80
           curl -o aktif6.txt -LJO https://herokumail.eu.org/api/v1/sub?vpn=vless,trojan&cc=SG,ID,MY,AU&port=443
-
+          curl -o aktif7.txt -LJO https://nautica.situs.workers.dev/api/v1/sub?vpn=vless,trojan&cc=SG,ID,MY,AU&port=443
       - name: send to telegram
         run: |
-          python3 kirim.py ${{ secrets.BOT }} -1002292042831 aktif1.txt && python3 kirim.py ${{ secrets.BOT }} -1002292042831 aktif2.txt && python3 kirim.py ${{ secrets.BOT }} -1002292042831 aktif3.txt && python3 kirim.py ${{ secrets.BOT }} -1002292042831 aktif4.txt && python3 kirim.py ${{ secrets.BOT }} -1002292042831 aktif5.txt && python3 kirim.py ${{ secrets.BOT }} -1002292042831 aktif6.txt
-
-
-
+          python3 kirim.py ${{ secrets.BOT }} -1002292042831 aktif1.txt && python3 kirim.py ${{ secrets.BOT }} -1002292042831 aktif2.txt && python3 kirim.py ${{ secrets.BOT }} -1002292042831 aktif3.txt && python3 kirim.py ${{ secrets.BOT }} -1002292042831 aktif4.txt && python3 kirim.py ${{ secrets.BOT }} -1002292042831 aktif5.txt && python3 kirim.py ${{ secrets.BOT }} -1002292042831 aktif6.txt && kirim.py ${{ secrets.BOT }} -1002292042831 aktif7.txt
 
 
