@@ -23,10 +23,10 @@ jobs:
       - name: Get Files
         run: |
           curl -o aktif1.txt -LJO https://5412.us.to/api/v1/sub?vpn=vless,trojan
-          curl -o vmess.txt -LJO https://acak.kclx.eu.org/?url=https://raw.githubusercontent.com/lagzian/SS-Collector/main/SS/VM_TrinityBase
-          curl -o vmess1.txt -LJO https://acak.kclx.eu.org/?url=https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/refs/heads/main/vmess_configs.txt
+          curl -o vm.txt -LJO https://acak.kclx.eu.org/?url=https://raw.githubusercontent.com/lagzian/SS-Collector/main/SS/VM_TrinityBase
+          curl -o vm1.txt -LJO https://acak.kclx.eu.org/?url=https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/refs/heads/main/vmess_configs.txt
 
       - name: send to telegram
         run: |
-          python3 kirim.py ${{ secrets.BOT }} -1002292042831 aktif1.txt && python3 test.py ${{ secrets.BOT2 }} -1002292042831 vmess.txt && python3 test.py ${{ secrets.BOT2 }} -1002292042831 vmess1.txt 
+          python3 kirim.py ${{ secrets.BOT }} -1002292042831 aktif1.txt && python3 kirim.py ${{ secrets.BOT2 }} -1002292042831 vm.txt && python3 kirim.py ${{ secrets.BOT2 }} -1002292042831 vm1.txt 
 
