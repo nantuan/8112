@@ -1,4 +1,4 @@
-name: kirim-kirim 2
+oname: kirim-kirim 2
 on:
   push:
     branches: [ "main" ]
@@ -28,5 +28,5 @@ jobs:
 
       - name: send to telegram
         run: |
-          python3 kirim.py ${{ secrets.BOT }} -1002292042831 aktif1.txt && python3 test.py ${{ secrets.BOT }} -1002292042831 vmess.txt && python3 test.py ${{ secrets.BOT }} -1002292042831 vmess1.txt 
+          python3 kirim.py ${{ secrets.BOT }} -1002292042831 aktif1.txt && python3 test.py ${{ secrets.BOT2 }} -1002292042831 vmess.txt && python3 test.py ${{ secrets.BOT2 }} -1002292042831 vmess1.txt 
 
