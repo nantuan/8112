@@ -1,4 +1,4 @@
-oname: kirim-kirim 2
+name: kirim-kirim 2
 on:
   push:
     branches: [ "main" ]
