@@ -28,5 +28,5 @@ jobs:
 
       - name: send to telegram
         run: |
-          python3 kirim.py ${{ secrets.BOT }} -1002292042831 aktif1.txt && python3 kirim.py ${{ secrets.BOT2 }} -1002292042831 vm.txt && python3 kirim.py ${{ secrets.BOT2 }} -1002292042831 vm1.txt 
+          python3 kirim.py ${{ secrets.BOT2 }} -1002292042831 aktif1.txt && python3 kirim.py ${{ secrets.BOT2 }} -1002292042831 vm.txt && python3 kirim.py ${{ secrets.BOT2 }} -1002292042831 vm1.txt 
 
