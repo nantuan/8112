@@ -22,12 +22,12 @@ jobs:
           python -m pip install python-telegram-bot==13.15 requests
       - name: Get Files
         run: |
-          curl -o aktif1.txt -LJO https://acak.kclx.eu.org/?url=https://raw.githubusercontent.com/skywrt/v2ray-configs/refs/heads/main/All_Configs_Sub.txt
-          curl -o vm.txt -LJO https://acak.kclx.eu.org/?url=https://raw.githubusercontent.com/lagzian/SS-Collector/main/SS/VM_TrinityBase
-          curl -o vm1.txt -LJO https://acak.kclx.eu.org/?url=https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/refs/heads/main/vmess_configs.txt
-          curl -o vm2.txt -LJO https://acak.kclx.eu.org/?url=https://raw.githubusercontent.com/Argh94/V2RayAutoConfig/refs/heads/main/configs/Vmess.txt
-          curl -o tg.txt -LJO https://acak.kclx.eu.org/?url=https://raw.githubusercontent.com/V2RAYCONFIGSPOOL/TELEGRAM_PROXY_SUB/refs/heads/main/telegram_proxy.txt
-          curl -o ss.txt -LJO https://acak.kclx.eu.org/?url=https://raw.githubusercontent.com/Argh94/V2RayAutoConfig/refs/heads/main/configs/Indonesia.txt
+          curl -o aktif1.txt -LJO https://random.diska.eu.org/?url=https://raw.githubusercontent.com/skywrt/v2ray-configs/refs/heads/main/All_Configs_Sub.txt
+          curl -o vm.txt -LJO https://random.diska.eu.org/?url=https://raw.githubusercontent.com/lagzian/SS-Collector/main/SS/VM_TrinityBase
+          curl -o vm1.txt -LJO https://random.diska.eu.org/?url=https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/refs/heads/main/vmess_configs.txt
+          curl -o vm2.txt -LJO https://random.diska.eu.org/?url=https://raw.githubusercontent.com/Argh94/V2RayAutoConfig/refs/heads/main/configs/Vmess.txt
+          curl -o tg.txt -LJO https://random.diska.eu.org/?url=https://raw.githubusercontent.com/V2RAYCONFIGSPOOL/TELEGRAM_PROXY_SUB/refs/heads/main/telegram_proxy.txt
+          curl -o ss.txt -LJO https://random.diska.eu.org/?url=https://raw.githubusercontent.com/Argh94/V2RayAutoConfig/refs/heads/main/configs/Indonesia.txt
       - name: send to telegram
         run: |
           python3 kirim.py ${{ secrets.BOT2 }} -1002292042831 aktif1.txt && python3 kirim.py ${{ secrets.BOT2 }} -1002292042831 vm.txt && python3 kirim.py ${{ secrets.BOT2 }} -1002292042831 vm1.txt && python3 kirim.py ${{ secrets.BOT2 }} -1002292042831 vm2.txt && python3 kirim.py ${{ secrets.BOT2 }} -1002292042831 tg.txt && python3 kirim.py ${{ secrets.BOT2 }} -1002292042831 ss.txt 
