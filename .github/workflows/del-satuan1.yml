@@ -16,4 +16,4 @@ jobs:
         EOF
     - name: Proses
       run: |
-         rclone delete S10: --drive-use-trash=false --ignore-errors 
+         rclone delete S12: --drive-use-trash=false --ignore-errors 
