@@ -28,8 +28,8 @@ jobs:
           curl -o 4.txt -LJO 'https://gen.trexmedia.eu.org/?template=vless&domain=siren.afrcloud.site&data=https://github.com/exball/sing-box-config/raw/refs/heads/Master/proxy-scaner/rawProxyList.txt'
           curl -o 5.txt -LJO 'https://gen.trexmedia.eu.org/?template=vless&domain=world.stupx2.my.id&data=https://github.com/exball/sing-box-config/raw/refs/heads/Master/proxy-scaner/rawProxyList.txt'
           curl -o 6.txt -LJO 'https://gen.trexmedia.eu.org/?template=vless&domain=free.tunneling.dpdns.org&data=https://github.com/exball/sing-box-config/raw/refs/heads/Master/proxy-scaner/rawProxyList.txt'
+          curl -o 7.txt -LJO 'https://gen.trexmedia.eu.org/?template=vless&domain=bersama-551.pages.dev&data=https://github.com/exball/sing-box-config/raw/refs/heads/Master/proxy-scaner/rawProxyList.txt'
           
       - name: send to telegram
         run: |
-          python3 kirim.py ${{ secrets.BOT2 }} -1002292042831 1.txt && python3 kirim.py ${{ secrets.BOT2 }} -1002292042831 2.txt && python3 kirim.py ${{ secrets.BOT2 }} -1002292042831 3.txt && python3 kirim.py ${{ secrets.BOT2 }} -1002292042831 4.txt && python3 kirim.py ${{ secrets.BOT2 }} -1002292042831 5.txt && python3 kirim.py ${{ secrets.BOT2 }} -1002292042831 6.txt
-          
+          python3 kirim.py ${{ secrets.BOT2 }} -1002292042831 1.txt && python3 kirim.py ${{ secrets.BOT2 }} -1002292042831 2.txt && python3 kirim.py ${{ secrets.BOT2 }} -1002292042831 3.txt && python3 kirim.py ${{ secrets.BOT2 }} -1002292042831 4.txt && python3 kirim.py ${{ secrets.BOT2 }} -1002292042831 5.txt && python3 kirim.py ${{ secrets.BOT2 }} -1002292042831 6.txtpython3 kirim.py ${{ secrets.BOT2 }} -1002292042831 6.txt && python3 kirim.py ${{ secrets.BOT2 }} -1002292042831 7.txt
