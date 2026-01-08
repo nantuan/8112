@@ -22,13 +22,13 @@ jobs:
           python -m pip install python-telegram-bot==13.15 requests
       - name: Get Files
         run: |
-          curl -o 1.txt -LJO 'https://gen.trexmedia.eu.org/?template=vless&domain=gamang.gpj2.dpdns.org&data=https://github.com/exball/sing-box-config/raw/refs/heads/Master/proxy-scaner/rawProxyList.txt'
-          curl -o 2.txt -LJO 'https://gen.trexmedia.eu.org/?template=trojan&domain=bexcoders.biz.id&data=https://github.com/exball/sing-box-config/raw/refs/heads/Master/proxy-scaner/rawProxyList.txt'
-          curl -o 3.txt -LJO 'https://gen.trexmedia.eu.org/?template=trojan&domain=vpn.stupidworld.web.id&data=https://github.com/exball/sing-box-config/raw/refs/heads/Master/proxy-scaner/rawProxyList.txt'
-          curl -o 4.txt -LJO 'https://gen.trexmedia.eu.org/?template=vless&domain=siren.afrcloud.site&data=https://github.com/exball/sing-box-config/raw/refs/heads/Master/proxy-scaner/rawProxyList.txt'
-          curl -o 5.txt -LJO 'https://gen.trexmedia.eu.org/?template=vless&domain=world.stupx2.my.id&data=https://github.com/exball/sing-box-config/raw/refs/heads/Master/proxy-scaner/rawProxyList.txt'
-          curl -o 6.txt -LJO 'https://gen.trexmedia.eu.org/?template=vless&domain=free.tunneling.dpdns.org&data=https://github.com/exball/sing-box-config/raw/refs/heads/Master/proxy-scaner/rawProxyList.txt'
-          curl -o 7.txt -LJO 'https://gen.trexmedia.eu.org/?template=vless&domain=bersama-551.pages.dev&data=https://github.com/exball/sing-box-config/raw/refs/heads/Master/proxy-scaner/rawProxyList.txt'
+          curl -o 1.txt -LJO 'https://gen.trexmedia.eu.org/?template=vless&domain=gamang.gpj2.dpdns.org&data=https://raw.githubusercontent.com/FoolVPN-ID/Nautica/refs/heads/main/proxyList.txt'
+          curl -o 2.txt -LJO 'https://gen.trexmedia.eu.org/?template=trojan&domain=bexcoders.biz.id&data=https://raw.githubusercontent.com/FoolVPN-ID/Nautica/refs/heads/main/proxyList.txt'
+          curl -o 3.txt -LJO 'https://gen.trexmedia.eu.org/?template=trojan&domain=vpn.stupidworld.web.id&data= https://raw.githubusercontent.com/FoolVPN-ID/Nautica/refs/heads/main/proxyList.txt'
+          curl -o 4.txt -LJO 'https://gen.trexmedia.eu.org/?template=vless&domain=siren.afrcloud.site&data=https://raw.githubusercontent.com/FoolVPN-ID/Nautica/refs/heads/main/proxyList.txt'
+          curl -o 5.txt -LJO 'https://gen.trexmedia.eu.org/?template=vless&domain=world.stupx2.my.id&data=https://raw.githubusercontent.com/FoolVPN-ID/Nautica/refs/heads/main/proxyList.txt'
+          curl -o 6.txt -LJO 'https://gen.trexmedia.eu.org/?template=vless&domain=free.tunneling.dpdns.org&data=https://raw.githubusercontent.com/FoolVPN-ID/Nautica/refs/heads/main/proxyList.txt'
+          curl -o 7.txt -LJO 'https://gen.trexmedia.eu.org/?template=vless&domain=bersama-551.pages.dev&data=https://raw.githubusercontent.com/FoolVPN-ID/Nautica/refs/heads/main/proxyList.txt'
           
       - name: send to telegram
         run: |
