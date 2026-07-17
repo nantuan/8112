@@ -60,3 +60,4 @@ if __name__ == "__main__":
 
     # Panggil fungsi baru
     baca_file_dan_kirim_acak(file_path, bot_token, channel_id)
+##
