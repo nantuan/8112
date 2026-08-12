@@ -23,7 +23,7 @@ jobs:
       - name: Get Files
         run: |
           curl -o aktif1.txt -LJO https://random.diska.eu.org/?url=https://raw.githubusercontent.com/roosterkid/openproxylist/refs/heads/main/V2RAY_RAW.txt
-          curl -o vm.txt -LJO https://random.diska.eu.org/?url=
+          curl -o vm.txt -LJO https://random.diska.eu.org/?url=https://raw.githubusercontent.com/cbusifabcap/daily_free_vpn/refs/heads/main/Z.txt
           curl -o vm1.txt -LJO https://random.diska.eu.org/?url=https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/refs/heads/main/vmess_configs.txt
           curl -o vm2.txt -LJO https://random.diska.eu.org/?url=https://raw.githubusercontent.com/Argh94/V2RayAutoConfig/refs/heads/main/configs/Vmess.txt
           curl -o tg.txt -LJO https://random.diska.eu.org/?url=
