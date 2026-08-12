@@ -33,7 +33,7 @@ jobs:
           curl -o tg2.txt -LJO https://random.diska.eu.org/?url=https://raw.githubusercontent.com/Argh94/Proxy-List/refs/heads/main/MTProto.txt
       - name: send to telegram
         run: |
-          python3 kirim.py ${{ secrets.BOT2 }} -1002292042831 aktif1.txt && python3 kirim.py ${{ secrets.BOT2 }} -1002292042831 vm.txt && python3 kirim.py ${{ secrets.BOT2 }} -1002292042831 vm1.txt && python3 kirim.py ${{ secrets.BOT2 }} -1002292042831 vm2.txt && python3 kirim.py ${{ secrets.BOT2 }} -1002292042831 tg.txt && python3 kirim.py ${{ secrets.BOT2 }} -1002292042831 ss.txt && python3 kirim.py ${{ secrets.BOT2 }} -1002292042831 tgp.txt && python3 kirim.py ${{ secrets.BOT2 }} -1002292042831 tg1.txt && python3 kirim.py ${{ secrets.BOT2 }} -1002292042831 tg2.txt 
+          python3 kirim.py ${{ secrets.BOT2 }} -1002325227388 aktif1.txt && python3 kirim.py ${{ secrets.BOT2 }} -1002325227388 vm.txt && python3 kirim.py ${{ secrets.BOT2 }} -1002325227388 vm1.txt && python3 kirim.py ${{ secrets.BOT2 }} -1002325227388 vm2.txt && python3 kirim.py ${{ secrets.BOT2 }} -1002325227388 tg.txt && python3 kirim.py ${{ secrets.BOT2 }} -1002325227388 ss.txt && python3 kirim.py ${{ secrets.BOT2 }} -1002325227388 tgp.txt && python3 kirim.py ${{ secrets.BOT2 }} -1002325227388 tg1.txt && python3 kirim.py ${{ secrets.BOT2 }} -1002325227388 tg2.txt 
 
 
 
