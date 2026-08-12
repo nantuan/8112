@@ -26,8 +26,8 @@ jobs:
           curl -o vm.txt -LJO https://random.diska.eu.org/?url=https://raw.githubusercontent.com/cbusifabcap/daily_free_vpn/refs/heads/main/Z.txt
           curl -o vm1.txt -LJO https://random.diska.eu.org/?url=https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/refs/heads/main/vmess_configs.txt
           curl -o vm2.txt -LJO https://random.diska.eu.org/?url=https://raw.githubusercontent.com/Argh94/V2RayAutoConfig/refs/heads/main/configs/Vmess.txt
-          curl -o tg.txt -LJO https://random.diska.eu.org/?url=
-          curl -o tgp.txt -LJO https://random.diska.eu.org/?url=
+          curl -o tg.txt -LJO https://random.diska.eu.org/?url=https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/all.txt
+          curl -o tgp.txt -LJO https://random.diska.eu.org/?url=https://raw.githubusercontent.com/myominn062-svg/mk-studio-vpn-service/refs/heads/main/MK-Studio-VPN.txt
           curl -o ss.txt -LJO https://random.diska.eu.org/?url=https://raw.githubusercontent.com/Argh94/V2RayAutoConfig/refs/heads/main/configs/Indonesia.txt
           curl -o tg1.txt -LJO https://random.diska.eu.org/?url=https://raw.githubusercontent.com/Argh94/telegram-proxy-scraper/refs/heads/main/proxy.txt
           curl -o tg2.txt -LJO https://random.diska.eu.org/?url=https://raw.githubusercontent.com/Argh94/Proxy-List/refs/heads/main/MTProto.txt
