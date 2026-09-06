@@ -1,0 +1,18 @@
+name: Keepalive Workflow
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+
+permissions:
+  actions: write
+
+jobs:
+  keepalive:
+    name: Keepalive Workflow
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: gautamkrishnar/keepalive-workflow@v2
+        with:
+          workflow_files: "Kirim 2.yml,sumberbaru1.yml,sumberbaru2.yml,sumberbaru3.yml,del.yml"
